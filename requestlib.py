@@ -4,6 +4,6 @@ r = requests.get('https://www.solaxcloud.com/proxyApp/proxy/api/getRealtimeInfo.
 
 library = r.json()
 result = library.get('result')
-
-print(result) 
-print('\n', result.get('sn'))
+# result = library['result']
+print(library) 
+print('\n', result.get('uploadTime'))
